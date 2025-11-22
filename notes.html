@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogDiary - My Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="notes-header">
+            <h1>My LogDiary Entries 📝</h1>
+            <button id="logoutBtn" class="secondary-btn">Log Out</button>
+        </header>
+
+        <main class="notes-content">
+            <section class="new-note-section">
+                <h3>New Entry:</h3>
+                <form id="noteForm">
+                    <input type="text" id="noteTitle" placeholder="Title (Optional)" maxlength="50">
+                    <textarea id="noteContent" rows="8" placeholder="What's on your mind today?" required></textarea>
+                    <button type="submit" class="primary-btn">Save Note</button>
+                </form>
+            </section>
+
+            <section class="saved-notes-section">
+                <h3>Your Previous Entries:</h3>
+                <div id="notesList" class="notes-grid">
+                    <div class="note-card">
+                        <h4>Example Note Title</h4>
+                        <p>This is a placeholder for your saved note content. Once you connect a backend, your notes will appear here!</p>
+                        <small>2025-11-22 19:30</small>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

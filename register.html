@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogDiary - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LogDiary ✍️</h1>
+            <h2>Create Your Account</h2>
+        </header>
+
+        <main class="form-card">
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <button type="submit" class="primary-btn">Register</button>
+            </form>
+            <p class="switch-form">Already have an account? <a href="index.html">Log in here</a></p>
+            <p id="registerMessage" class="message"></p>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
